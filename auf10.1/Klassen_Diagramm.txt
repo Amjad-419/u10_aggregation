@@ -1,0 +1,27 @@
++-------------------------------------------+
+|      Container                            |
++-------------------------------------------+
+| - zielhafen: String                       |
+| - masse: double                           |
++-------------------------------------------+
+| + getZielhafen()                 : String |
+| + setZielhafen(zielhafen:String) : void   |
+| + getMasse()                     : double |
+| + setMasse(masse:double)         : void   | 
++-------------------------------------------+
+
+
+           
+Schiff ◇────────── Container
+
++--------------------------------------+
+|           Schiff                     |
++--------------------------------------+
+| - eigenmasse: double                 |
+| - container1: Container              |
+| - container2: Container              |
++--------------------------------------------------+
+| + beladen(platz.int, container:Container): void  |
+| + entladen(platz:int)                    : double|
+| + getGesamtmasse()                       : double|
++--------------------------------------------------+
