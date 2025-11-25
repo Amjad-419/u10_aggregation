@@ -1,0 +1,50 @@
++--------------------------------------------------+
+|           Schiff                                 |
++--------------------------------------------------+
+| - eigenmasse: double                             |
+| - containerAufPlatz1: Container                  |
+| - containerAufPlatz1: Container                  |
++--------------------------------------------------+
+| + setEigenMasse(masse:int)          : void       | 
+| + getEigenMasse()                   : int        |
+| + beladePlatz1(container:Container) : void       |
+| + entladePlatz1()                   : Container  |
+| + beladePlatz1(container:Container) : void       |
+| + entladePlatz1()                   : Container  |
+| + gibGesamtMasse()                  : int        |
++--------------------------------------------------+
+
+Schiff ◇────────── Container
+
++------------------------------------------------+
+|      Container                                 |
++------------------------------------------------+
+| - zielhafen           : String                 |
+| - eingenMasse         : int                    |
+| - paletteAufPlatz1    : Palette                |
+| - paletteAufPlatz2    : Palette                |
+| - paletteAufPlatz3    : Palette                |
++------------------------------------------------+
+| + setEigenMasse(masse: int)      : void        |
+| + getEigenMasse()                : int         |
+| + setZielHafen(hafen: String)    : void        |
+| + getZielHafen ()                : String      |
+| + belegePlatz(nr: int, palette: Palette): void |
+| + raeumePlatz(nr: int)           : Palette     |
+| + gibGesamtMasse()               : int         |
++------------------------------------------------+
+
+Container ◇───────────────── Palette
+
+
++-------------------------------------------+
+|                 Palette                   |
++-------------------------------------------+
+| – ladung:     : String                    |
+| – masse:      : double                    |
++-------------------------------------------+
+| + getLadung()                    : String |
+| + setLadung(bezeichnung: String) : void   |
+| + getMasse()                     : int    |
+| + setMasse(int)                  : void   |
++-------------------------------------------+
